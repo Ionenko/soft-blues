@@ -16,6 +16,10 @@ export const Content = styled.div`
   z-index: 1;
   color: #fff;
   font-size: 14px;
+
+  @media only screen and (max-width: 650px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Details = styled.div`

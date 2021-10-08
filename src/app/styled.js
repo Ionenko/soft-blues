@@ -8,12 +8,14 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: #040f26e6;
   min-height: 100vh;
+  padding: 0 15px;
 `;
 
 export const Content = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   margin: auto;
 `;
 
@@ -26,11 +28,22 @@ export const Heading = styled.h2`
 `;
 
 export const ContentInner = styled(Segment)`
-  width: 720px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
   
   &&& {
-    padding: 66px 66px;
+    padding: 30px 30px;
     background: #fff;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    max-width: 100%;
+    
+    &&& {
+      padding: 15px 15px;
+    }
   }
 `;
 
